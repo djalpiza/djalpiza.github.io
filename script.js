@@ -20,16 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const descriptionModal = document.getElementById("description-modal");
     const descriptionButton = document.getElementById("start-description");
 
+    // Hide description modal when user clicks "Got It"
+    descriptionButton.addEventListener("click", () => {
+        descriptionModal.classList.add("hidden");
+    });
+
     // Show game description after agreeing to privacy notice
     agreeButton.addEventListener("click", () => {
         privacyModal.classList.add("hidden");
         descriptionModal.classList.remove("hidden");
     });
 
-    // Hide description modal when user clicks "Got It"
-    descriptionButton.addEventListener("click", () => {
-        descriptionModal.classList.add("hidden");
-    });
 });
 
 // Enable Start Game Button when Username is Entered
