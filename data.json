@@ -1,104 +1,188 @@
 {
     "characteristics": [
-        "Football fan",
-        "Loves hiking",
-        "Reads fiction",
-        "Plays chess",
-        "Enjoys cooking",
-        "Speaks two languages",
-        "Watches anime",
-        "Owns a pet",
-        "Knows programming",
-        "Plays a musical instrument",
-        "Loves gardening",
-        "Watches true crime documentaries",
-        "Is a fan of Marvel movies",
-        "Has visited 5+ countries",
-        "Enjoys painting or drawing",
-        "Plays video games regularly",
-        "Volunteers in the community",
-        "Writes poetry or stories",
-        "Runs marathons",
-        "Is a coffee enthusiast",
-        "Has worked remotely for 5+ years",
-        "Prefers tea over coffee",
-        "Reads self-help books",
-        "Knows sign language",
-        "Collects unique items (coins, stamps, etc.)",
-        "Bakes amazing desserts",
-        "Enjoys DIY projects",
-        "Plays board games frequently",
-        "Meditates daily",
-        "Has run a small business",
-        "Has been with the same company for 10+ years",
-        "Is an early riser",
-        "Works as a freelancer",
-        "Loves watching wildlife documentaries",
-        "Practices yoga",
-        "Enjoys knitting or crocheting",
-        "Has attended a professional conference this year",
-        "Coaches a sports team",
-        "Enjoys camping",
-        "Is a fan of Harry Potter books/movies",
-        "Has a photography hobby",
-        "Regularly participates in charity events",
-        "Watches historical dramas",
-        "Has worked in 3 or more industries",
-        "Has written a published article or book",
-        "Knows how to salsa dance",
-        "Is a fan of Formula 1 racing",
-        "Loves puzzles and brain teasers",
-        "Has organized a corporate event",
-        "Enjoys birdwatching",
-        "Speaks more than three languages",
-        "Commutes by bike",
-        "Has lived in more than 3 cities",
-        "Is skilled in graphic design",
-        "Has been promoted 3+ times in their career",
-        "Has led a successful project",
-        "Enjoys fishing",
-        "Is a vegetarian or vegan",
-        "Mentors younger colleagues",
-        "Watches romantic comedies",
-        "Has worked for a startup",
-        "Owns a collection of books",
-        "Follows a strict fitness routine",
-        "Is a social media content creator",
-        "Has hosted webinars or workshops",
-        "Participates in hackathons",
-        "Has a talent for public speaking",
-        "Watches reality TV shows",
-        "Prefers working in small teams",
-        "Loves writing code",
-        "Is an Excel wizard",
-        "Has built something from scratch (physical or digital)",
-        "Enjoys stand-up comedy",
-        "Has worked abroad",
-        "Prefers working in an open office",
-        "Has pitched an idea to upper management",
-        "Enjoys analyzing data",
-        "Has experience in customer service",
-        "Is a fan of indie music",
-        "Watches sports regularly",
-        "Is the go-to tech person in their team",
-        "Reads tech blogs or news",
-        "Loves playing trivia games",
-        "Participates in book clubs",
-        "Has trained a new hire",
-        "Is a movie buff",
-        "Has designed a website",
-        "Prefers written communication over meetings",
-        "Has a strong LinkedIn profile",
-        "Loves attending concerts",
-        "Has successfully completed a certification program",
-        "Is a fan of classic rock music",
-        "Loves spicy food",
-        "Has an impressive professional portfolio",
-        "Takes regular road trips",
-        "Watches sci-fi movies or shows",
-        "Is skilled at negotiating deals",
-        "Has a favorite productivity tool",
-        "Enjoys creating spreadsheets",
-        "Has completed a professional mentorship program"
+        {
+            "english": "Football fan",
+            "german": "Fußballfan"
+        },
+        {
+            "english": "Loves hiking",
+            "german": "Liebt Wandern"
+        },
+        {
+            "english": "Reads fiction",
+            "german": "Liest Belletristik"
+        },
+        {
+            "english": "Plays chess",
+            "german": "Spielt Schach"
+        },
+        {
+            "english": "Enjoys cooking",
+            "german": "Kocht gerne"
+        },
+        {
+            "english": "Speaks two languages",
+            "german": "Spricht zwei Sprachen"
+        },
+        {
+            "english": "Watches anime",
+            "german": "Schaut Anime"
+        },
+        {
+            "english": "Owns a pet",
+            "german": "Hat ein Haustier"
+        },
+        {
+            "english": "Knows programming",
+            "german": "Kennt sich mit Programmieren aus"
+        },
+        {
+            "english": "Plays a musical instrument",
+            "german": "Spielt ein Musikinstrument"
+        },
+        {
+            "english": "Loves gardening",
+            "german": "Liebt Gartenarbeit"
+        },
+        {
+            "english": "Watches true crime documentaries",
+            "german": "Schaut True-Crime-Dokumentationen"
+        },
+        {
+            "english": "Is a fan of Marvel movies",
+            "german": "Ist ein Fan von Marvel-Filmen"
+        },
+        {
+            "english": "Has visited 5+ countries",
+            "german": "Hat mehr als 5 Länder besucht"
+        },
+        {
+            "english": "Enjoys painting or drawing",
+            "german": "Malt oder zeichnet gerne"
+        },
+        {
+            "english": "Plays video games regularly",
+            "german": "Spielt regelmäßig Videospiele"
+        },
+        {
+            "english": "Volunteers in the community",
+            "german": "Engagiert sich ehrenamtlich in der Gemeinde"
+        },
+        {
+            "english": "Writes poetry or stories",
+            "german": "Schreibt Gedichte oder Geschichten"
+        },
+        {
+            "english": "Runs marathons",
+            "german": "Läuft Marathons"
+        },
+        {
+            "english": "Is a coffee enthusiast",
+            "german": "Ist ein Kaffeeliebhaber"
+        },
+        {
+            "english": "Has worked remotely for 5+ years",
+            "german": "Hat mehr als 5 Jahre remote gearbeitet"
+        },
+        {
+            "english": "Prefers tea over coffee",
+            "german": "Bevorzugt Tee statt Kaffee"
+        },
+        {
+            "english": "Reads self-help books",
+            "german": "Liest Selbsthilfebücher"
+        },
+        {
+            "english": "Knows sign language",
+            "german": "Kennt Gebärdensprache"
+        },
+        {
+            "english": "Collects unique items (coins, stamps, etc.)",
+            "german": "Sammelt einzigartige Gegenstände (Münzen, Briefmarken, usw.)"
+        },
+        {
+            "english": "Bakes amazing desserts",
+            "german": "Backt fantastische Desserts"
+        },
+        {
+            "english": "Enjoys DIY projects",
+            "german": "Macht gerne DIY-Projekte"
+        },
+        {
+            "english": "Plays board games frequently",
+            "german": "Spielt häufig Brettspiele"
+        },
+        {
+            "english": "Meditates daily",
+            "german": "Meditiert täglich"
+        },
+        {
+            "english": "Has run a small business",
+            "german": "Hat ein kleines Unternehmen geführt"
+        },
+        {
+            "english": "Has been with the same company for 10+ years",
+            "german": "Ist seit mehr als 10 Jahren bei derselben Firma"
+        },
+        {
+            "english": "Is an early riser",
+            "german": "Ist ein Frühaufsteher"
+        },
+        {
+            "english": "Works as a freelancer",
+            "german": "Arbeitet als Freiberufler"
+        },
+        {
+            "english": "Loves watching wildlife documentaries",
+            "german": "Liebt das Anschauen von Tierdokumentationen"
+        },
+        {
+            "english": "Practices yoga",
+            "german": "Praktiziert Yoga"
+        },
+        {
+            "english": "Enjoys knitting or crocheting",
+            "german": "Strickt oder häkelt gerne"
+        },
+        {
+            "english": "Has attended a professional conference this year",
+            "german": "Hat dieses Jahr eine Fachkonferenz besucht"
+        },
+        {
+            "english": "Coaches a sports team",
+            "german": "Trainiert ein Sportteam"
+        },
+        {
+            "english": "Enjoys camping",
+            "german": "Geht gerne campen"
+        },
+        {
+            "english": "Is a fan of Harry Potter books/movies",
+            "german": "Ist ein Fan der Harry-Potter-Bücher/Filme"
+        },
+        {
+            "english": "Has a photography hobby",
+            "german": "Hat Fotografie als Hobby"
+        },
+        {
+            "english": "Regularly participates in charity events",
+            "german": "Nimmt regelmäßig an Wohltätigkeitsveranstaltungen teil"
+        },
+        {
+            "english": "Watches historical dramas",
+            "german": "Schaut historische Dramen"
+        },
+        {
+            "english": "Has worked in 3 or more industries",
+            "german": "Hat in 3 oder mehr Branchen gearbeitet"
+        },
+        {
+            "english": "Has written a published article or book",
+            "german": "Hat einen veröffentlichten Artikel oder ein Buch geschrieben"
+        },
+        {
+            "english": "Knows how to salsa dance",
+            "german": "Kann Salsa tanzen"
+        }
     ]
 }
