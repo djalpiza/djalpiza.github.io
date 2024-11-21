@@ -111,6 +111,7 @@ usernameInput.addEventListener("input", () => {
 // Start Game Logic
 startGameButton.addEventListener("click", async () => {
     const username = usernameInput.value.trim();
+    const selectedLanguage = document.body.getAttribute("data-lang"); // Store selected language
     if (!username) {
         alert("Please enter a username!");
         return;
@@ -134,7 +135,7 @@ startGameButton.addEventListener("click", async () => {
     // Fetch characteristics
     const response = await fetch("data.json");
     const data = await response.json();
-    const characteristics = data.characteristics;
+    const characteristics = data.characteristics.map((char) => char[selectedLanguage]);
 
     // Generate random Bingo matrix
     const randomCharacteristics = [...characteristics]
