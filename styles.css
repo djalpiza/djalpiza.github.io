@@ -42,3 +42,11 @@ h1 {
 .hidden {
     display: none;
 }
+
+.game-description {
+    font-size: 16px;
+    color: #333;
+    margin: 10px auto 20px;
+    width: 80%;
+    line-height: 1.5;
+}
