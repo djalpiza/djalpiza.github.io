@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Hide description modal when user clicks "Got It"
     descriptionButton.addEventListener("click", () => {
+		console.log("Got It! button clicked");
         descriptionModal.classList.add("hidden");
     });
 
