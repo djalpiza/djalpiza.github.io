@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     descriptionButton.addEventListener("click", () => {
 		console.log("Got It! button clicked");
         descriptionModal.classList.add("hidden");
+		console.log("Modal classes:", descriptionModal.classList);
     });
 
     // Show game description after agreeing to privacy notice
