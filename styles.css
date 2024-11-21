@@ -10,7 +10,7 @@ h1 {
 }
 
 .hidden {
-    display: none;
+    display: none !important; /* Ensure no CSS rules override this */
 }
 
 /* Modal Styles */
