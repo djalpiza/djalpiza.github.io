@@ -67,6 +67,10 @@ startGameButton.addEventListener("click", async () => {
         alert("There was an issue saving your username. Please try again.");
         return;
     }
+	
+	// Disable Start Game Button after clicking
+    startGameButton.disabled = true;
+    console.log("Start Game button disabled.");
 
     // Fetch characteristics
     const response = await fetch("data.json");
