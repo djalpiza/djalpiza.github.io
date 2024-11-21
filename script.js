@@ -1,7 +1,44 @@
+// Firebase Configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBK3XrYN630hzci5WCFAVOnSGMz0nD2KiI",
+  authDomain: "faxmasusers.firebaseapp.com",
+  projectId: "faxmasusers",
+  storageBucket: "faxmasusers.firebasestorage.app",
+  messagingSenderId: "931836276138",
+  appId: "1:931836276138:web:530c989d463fab77d10fd3",
+  measurementId: "G-5JBDKQCTS4"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+// Privacy Modal Logic
+document.addEventListener("DOMContentLoaded", () => {
+    const privacyModal = document.getElementById("privacy-modal");
+    const agreeButton = document.getElementById("agree-button");
+
+    agreeButton.addEventListener("click", () => {
+        privacyModal.style.display = "none";
+    });
+});
+
+// Start Game Logic
 document.getElementById("start-game").addEventListener("click", async () => {
     const username = document.getElementById("username").value.trim();
     if (!username) {
         alert("Please enter a username!");
+        return;
+    }
+
+    // Save Username to Firebase
+    try {
+        const usernameRef = db.ref("usernames").push();
+        await usernameRef.set({ username });
+        console.log("Username saved to Firebase successfully!");
+    } catch (error) {
+        console.error("Error saving username to Firebase:", error);
+        alert("There was an issue saving your username. Please try again.");
         return;
     }
 
