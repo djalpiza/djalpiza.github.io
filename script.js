@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const setLanguage = (lang) => {
         const langTexts = translations[lang];
+		document.body.setAttribute("data-lang", lang); // Store the selected language globally
         document.getElementById("privacy-title").textContent = langTexts.privacyTitle;
         document.getElementById("privacy-text").textContent = langTexts.privacyText;
         document.getElementById("agree-button").textContent = langTexts.agreeButton;
