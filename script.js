@@ -150,8 +150,7 @@ startGameButton.addEventListener("click", async () => {
             (fact, index) => `
             <div class="bingo-cell" data-index="${index}">
                 <div class="fact">${fact}</div>
-                <input type="text" class="bingo-input" placeholder="Enter a name">
-                <input type="text" class="bingo-input" placeholder="Enter a fun fact">
+                <input type="text" class="bingo-input" placeholder="Name">
             </div>
         `
         )

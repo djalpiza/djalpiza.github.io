@@ -116,7 +116,8 @@ button:disabled {
     width: 90%;
     font-size: 12px;
     padding: 5px;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 /* Responsive Styles for Smartphones */
