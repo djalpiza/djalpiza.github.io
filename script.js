@@ -15,6 +15,65 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
+// Text translations
+const translations = {
+    english: {
+        privacyTitle: "Privacy Notice",
+        privacyText: "By proceeding, you consent to share your name or chosen alias with the game organizers. Rest assured, this information will be used solely for the purpose of the Bingo game and will not be shared with any third parties. You may use a nickname if you prefer not to share your real name.",
+        agreeButton: "I Agree",
+        descriptionTitle: "Welcome to Bingo!",
+        descriptionText: "Your goal is to match characteristics of people in a 3x3 bingo board. Below each characteristic, you can write a name and a fun fact to connect it to someone you know. Click on a cell to mark it when you've completed it. The challenge: get three in a row, column, or diagonal!",
+        gameTitle: "Bingo Game",
+        startGameButton: "Start Game",
+        usernamePlaceholder: "Enter your nickname",
+        gotItButton: "Got It!"
+    },
+    german: {
+        privacyTitle: "Datenschutzhinweis",
+        privacyText: "Wenn Sie fortfahren, stimmen Sie zu, Ihren Namen oder ein Pseudonym mit den Spielorganisatoren zu teilen. Diese Informationen werden ausschließlich für das Bingo-Spiel verwendet und nicht an Dritte weitergegeben. Sie können ein Pseudonym verwenden, wenn Sie Ihren echten Namen nicht teilen möchten.",
+        agreeButton: "Ich stimme zu",
+        descriptionTitle: "Willkommen bei Bingo!",
+        descriptionText: "Ihr Ziel ist es, Eigenschaften von Personen auf einem 3x3-Bingo-Feld zuzuordnen. Unter jeder Eigenschaft können Sie einen Namen und eine lustige Tatsache schreiben, um sie mit jemandem zu verbinden, den Sie kennen. Klicken Sie auf ein Feld, um es zu markieren, wenn Sie es abgeschlossen haben. Die Herausforderung: drei in einer Reihe, Spalte oder Diagonale!",
+        gameTitle: "Bingo-Spiel",
+        startGameButton: "Spiel starten",
+        usernamePlaceholder: "Geben Sie Ihren Spitznamen ein",
+        gotItButton: "Verstanden!"
+    }
+};
+
+// Language selection logic
+document.addEventListener("DOMContentLoaded", () => {
+    const languageModal = document.getElementById("language-modal");
+    const selectEnglish = document.getElementById("select-english");
+    const selectGerman = document.getElementById("select-german");
+
+    const setLanguage = (lang) => {
+        const langTexts = translations[lang];
+        document.getElementById("privacy-title").textContent = langTexts.privacyTitle;
+        document.getElementById("privacy-text").textContent = langTexts.privacyText;
+        document.getElementById("agree-button").textContent = langTexts.agreeButton;
+        document.getElementById("description-title").textContent = langTexts.descriptionTitle;
+        document.getElementById("description-text").textContent = langTexts.descriptionText;
+        document.getElementById("game-title").textContent = langTexts.gameTitle;
+        document.getElementById("start-game").textContent = langTexts.startGameButton;
+        document.getElementById("username").placeholder = langTexts.usernamePlaceholder;
+        document.getElementById("start-description").textContent = langTexts.gotItButton;
+    };
+
+    selectEnglish.addEventListener("click", () => {
+        setLanguage("english");
+        languageModal.classList.add("hidden");
+        document.getElementById("privacy-modal").classList.remove("hidden");
+    });
+
+    selectGerman.addEventListener("click", () => {
+        setLanguage("german");
+        languageModal.classList.add("hidden");
+        document.getElementById("privacy-modal").classList.remove("hidden");
+    });
+});
+
+// Rest of your existing script.js logic here (unchanged from your provided version)
 // Privacy Modal Logic
 document.addEventListener("DOMContentLoaded", () => {
     const privacyModal = document.getElementById("privacy-modal");
