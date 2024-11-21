@@ -7,6 +7,7 @@ body {
 
 h1 {
     margin-top: 20px;
+	font-size: 24px;
 }
 
 .hidden {
@@ -32,18 +33,19 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 80%;
-    max-width: 500px;
+    width: 90%;
+    max-width: 400px;
+	box-sizing: border-box;
 }
 
 .modal p {
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
     margin-bottom: 20px;
 }
 
 .modal button {
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 16px;
     border: none;
     background-color: #007BFF;
@@ -56,12 +58,40 @@ h1 {
     background-color: #0056b3;
 }
 
+/* Input Fields and Button */
+input[type="text"] {
+    width: 90%; /* Adjusted for small screens */
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
 #bingo-board {
     display: grid;
-    grid-template-columns: repeat(3, 150px);
-    gap: 15px;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px auto;
+    padding: 0 10px;
 }
 
 .bingo-cell {
@@ -73,6 +103,8 @@ h1 {
     text-align: center;
     cursor: pointer;
     user-select: none;
+	background-color: #f9f9f9;
+    font-size: 14px;
 }
 
 .bingo-cell.marked {
@@ -82,11 +114,39 @@ h1 {
 .bingo-input {
     margin-top: 5px;
     width: 90%;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px;
+	box-sizing: border-box;
 }
 
-button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+/* Responsive Styles for Smartphones */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px; /* Smaller heading for mobile */
+    }
+
+    .modal-content {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #bingo-board {
+        grid-template-columns: repeat(3, 90px); /* Smaller Bingo cells */
+        gap: 8px;
+    }
+
+    .bingo-cell {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .bingo-input {
+        font-size: 12px;
+        padding: 5px;
+    }
 }
