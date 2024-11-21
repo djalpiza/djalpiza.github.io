@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Privacy Notice Modal -->
     <div id="privacy-modal" class="modal">
         <div class="modal-content">
             <h2>Privacy Notice</h2>
@@ -18,18 +19,28 @@
             <button id="agree-button">I Agree</button>
         </div>
     </div>
+
+    <!-- Game Description Modal -->
+    <div id="description-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Welcome to Bingo!</h2>
+            <p class="game-description">
+                Your goal is to match characteristics of people in a 3x3 bingo board. 
+                Below each characteristic, you can write a name and a fun fact to connect it to someone you know. 
+                Click on a cell to mark it when you've completed it. The challenge: get three in a row, column, or diagonal!
+            </p>
+            <button id="start-description">Got It!</button>
+        </div>
+    </div>
+
     <h1>Bingo Game</h1>
-    <p class="game-description">
-        Welcome to the Bingo Game! Your goal is to match characteristics of people 
-        in a 3x3 bingo board. Below each characteristic, you can write a name 
-        and a fun fact to connect it to someone you know. 
-        Click on a cell to mark it when you've completed it. The challenge: get three in a row, column, or diagonal!
-    </p>
     <div>
         <input type="text" id="username" placeholder="Enter your nickname" />
-        <button id="start-game">Start Game</button>
+        <button id="start-game" disabled>Start Game</button>
     </div>
     <div id="bingo-board" class="hidden"></div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

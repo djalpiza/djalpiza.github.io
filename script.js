@@ -1,12 +1,12 @@
 // Firebase Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBK3XrYN630hzci5WCFAVOnSGMz0nD2KiI",
-  authDomain: "faxmasusers.firebaseapp.com",
-  projectId: "faxmasusers",
-  storageBucket: "faxmasusers.firebasestorage.app",
-  messagingSenderId: "931836276138",
-  appId: "1:931836276138:web:530c989d463fab77d10fd3",
-  measurementId: "G-5JBDKQCTS4"
+    apiKey: "AIzaSyBK3XrYN630hzci5WCFAVOnSGMz0nD2KiI",
+    authDomain: "faxmasusers.firebaseapp.com",
+    projectId: "faxmasusers",
+    storageBucket: "faxmasusers.firebasestorage.app",
+    messagingSenderId: "931836276138",
+    appId: "1:931836276138:web:530c989d463fab77d10fd3",
+    measurementId: "G-5JBDKQCTS4"
 };
 
 // Initialize Firebase
@@ -17,15 +17,36 @@ const db = firebase.database();
 document.addEventListener("DOMContentLoaded", () => {
     const privacyModal = document.getElementById("privacy-modal");
     const agreeButton = document.getElementById("agree-button");
+    const descriptionModal = document.getElementById("description-modal");
+    const descriptionButton = document.getElementById("start-description");
 
+    // Show game description after agreeing to privacy notice
     agreeButton.addEventListener("click", () => {
-        privacyModal.style.display = "none";
+        privacyModal.classList.add("hidden");
+        descriptionModal.classList.remove("hidden");
+    });
+
+    // Hide description modal when user clicks "Got It"
+    descriptionButton.addEventListener("click", () => {
+        descriptionModal.classList.add("hidden");
     });
 });
 
+// Enable Start Game Button when Username is Entered
+const usernameInput = document.getElementById("username");
+const startGameButton = document.getElementById("start-game");
+
+usernameInput.addEventListener("input", () => {
+    if (usernameInput.value.trim()) {
+        startGameButton.disabled = false;
+    } else {
+        startGameButton.disabled = true;
+    }
+});
+
 // Start Game Logic
-document.getElementById("start-game").addEventListener("click", async () => {
-    const username = document.getElementById("username").value.trim();
+startGameButton.addEventListener("click", async () => {
+    const username = usernameInput.value.trim();
     if (!username) {
         alert("Please enter a username!");
         return;
