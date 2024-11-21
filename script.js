@@ -18,7 +18,15 @@ document.getElementById("start-game").addEventListener("click", async () => {
     // Display Bingo board
     const bingoBoard = document.getElementById("bingo-board");
     bingoBoard.innerHTML = randomCharacteristics
-        .map((fact, index) => `<div class="bingo-cell" data-index="${index}">${fact}</div>`)
+        .map(
+            (fact, index) => `
+            <div class="bingo-cell" data-index="${index}">
+                <div class="fact">${fact}</div>
+                <input type="text" class="bingo-input" placeholder="Enter a name">
+                <input type="text" class="bingo-input" placeholder="Enter a fun fact">
+            </div>
+        `
+        )
         .join("");
     bingoBoard.classList.remove("hidden");
 
