@@ -3,6 +3,7 @@
 const firebaseConfig = {
   apiKey: "AIzaSyBK3XrYN630hzci5WCFAVOnSGMz0nD2KiI",
   authDomain: "faxmasusers.firebaseapp.com",
+  databaseURL: "https://faxmasusers-default-rtdb.europe-west1.firebasedatabase.app", // Use the correct region-specific URL
   projectId: "faxmasusers",
   storageBucket: "faxmasusers.firebasestorage.app",
   messagingSenderId: "931836276138",
