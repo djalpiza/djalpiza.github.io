@@ -18,8 +18,8 @@ const db = firebase.database();
 // Text translations
 const translations = {
     english: {
-        privacyTitle: "🎄 Welcome to the Christmas Party 🎄",
-        privacyText: "ho, ho, ho! By joining in, you're giving us permission to use your chosen alias for our merry Bingo game. No need to worry—your info will stay as safe as gifts under the Christmas tree. Feeling creative? Pick a festive nickname like “Jingle Belle” or “Snowy McFrost”! 🎅",
+        privacyTitle: "Welcome to the Christmas Party",
+        privacyText: "ho, ho, ho! By joining in, you're giving us permission to use your chosen alias for our merry Bingo game. No need to worry—your info will stay as safe as gifts under the Christmas tree. Feeling creative? Pick a festive nickname like “Jingle Belle” or “Snowy McFrost”!",
         agreeButton: "I Agree",
         descriptionTitle: "Welcome to Bingo!",
         descriptionText: "Your goal is to match characteristics of people in a 3x3 bingo board. Below each characteristic, you can write a name and a fun fact to connect it to someone you know. Click on a cell to mark it when you've completed it. The challenge: get three in a row, column, or diagonal!",
@@ -29,9 +29,9 @@ const translations = {
         gotItButton: "Got It!"
     },
     german: {
-        privacyTitle: "🎅 Willkommen zur Weihnachtsessen 🎅",
+        privacyTitle: "Willkommen zur Weihnachtsessen",
         privacyText: "Ho, ho, ho, Weihnachtsfreund! Mit deinem Klick erlaubst du uns, deinen gewählten Alias für unser festliches Bingo zu nutzen. Keine Sorge—deine Daten sind bei uns sicherer als der Lebkuchen vor dem Weihnachtsmann und werden nur genutzt, um heute Abend Weihnachtszauber zu verbreiten. Lust auf einen kreativen Namen? Wie wär’s mit „Keks-König“ oder „Glühwein-Gretel“? 🍪🎄 Denn hier geht’s darum!",
-        agreeButton: "Ich bin dabei – Frohes Fest und Spaß! 🎁",
+        agreeButton: "Ich bin dabei – Frohes Fest und Spaß!",
         descriptionTitle: "Willkommen bei Bingo!",
         descriptionText: "Ihr Ziel ist es, Eigenschaften von Personen auf einem 3x3-Bingo-Feld zuzuordnen. Unter jeder Eigenschaft können Sie einen Namen und eine lustige Tatsache schreiben, um sie mit jemandem zu verbinden, den Sie kennen. Klicken Sie auf ein Feld, um es zu markieren, wenn Sie es abgeschlossen haben. Die Herausforderung: drei in einer Reihe, Spalte oder Diagonale!",
         gameTitle: "Bingo-Spiel",
