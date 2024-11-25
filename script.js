@@ -18,26 +18,26 @@ const db = firebase.database();
 // Text translations
 const translations = {
     english: {
-        privacyTitle: "Welcome to the Christmas Party",
-        privacyText: "ho, ho, ho! By joining in, you're giving us permission to use your chosen alias for our merry Bingo game. No need to worry—your info will stay as safe as gifts under the Christmas tree. Feeling creative? Pick a festive nickname like “Jingle Belle” or “Snowy McFrost”!",
-        agreeButton: "I Agree",
-        descriptionTitle: "Welcome to Bingo!",
-        descriptionText: "Your goal is to match characteristics of people in a 3x3 bingo board. Below each characteristic, you can write a name and a fun fact to connect it to someone you know. Click on a cell to mark it when you've completed it. The challenge: get three in a row, column, or diagonal!",
+        privacyTitle: "🎄 Welcome to the Christmas Party 🎄",
+        privacyText: "ho, ho, ho! By joining in, you're giving us permission to use your chosen alias for our merry Bingo game. No need to worry—your info will stay as safe as gifts under the Christmas tree. Feeling creative? Pick a festive nickname like “Jingle Belle” or “Snowy McFrost”! 🎅",
+        agreeButton: "Count me in for fun! 🎁",
+        descriptionTitle: "🧊 First Game: Ice Breaker! ❄️",
+        descriptionText: "Let’s kick things off with a jolly start! Your mission is to complete the 3x3 board by talking with your colleagues and discovering who matches the characteristics listed on your grid. Under each characteristic, write down the name of the person who fits the best. 🎄 **Pro Tip:** Each person can only be used for one characteristic, so get to know as many people as possible!. Bring your A-game and try to fill out the entire board—it’s going to play a part in the fun surprises we have planned later tonight. So get chatting and spread some holiday cheer!",
         gameTitle: "Bingo Game",
         startGameButton: "Start Game",
         usernamePlaceholder: "Enter your nickname",
-        gotItButton: "Got It!"
+        gotItButton: "Take me to the game! 🎁"
     },
     german: {
-        privacyTitle: "Willkommen zur Weihnachtsessen",
+        privacyTitle: "🎅 Willkommen zur Weihnachtsessen 🎅",
         privacyText: "Ho, ho, ho, Weihnachtsfreund! Mit deinem Klick erlaubst du uns, deinen gewählten Alias für unser festliches Bingo zu nutzen. Keine Sorge—deine Daten sind bei uns sicherer als der Lebkuchen vor dem Weihnachtsmann und werden nur genutzt, um heute Abend Weihnachtszauber zu verbreiten. Lust auf einen kreativen Namen? Wie wär’s mit „Keks-König“ oder „Glühwein-Gretel“? 🍪🎄 Denn hier geht’s darum!",
-        agreeButton: "Ich bin dabei – Frohes Fest und Spaß!",
-        descriptionTitle: "Willkommen bei Bingo!",
-        descriptionText: "Ihr Ziel ist es, Eigenschaften von Personen auf einem 3x3-Bingo-Feld zuzuordnen. Unter jeder Eigenschaft können Sie einen Namen und eine lustige Tatsache schreiben, um sie mit jemandem zu verbinden, den Sie kennen. Klicken Sie auf ein Feld, um es zu markieren, wenn Sie es abgeschlossen haben. Die Herausforderung: drei in einer Reihe, Spalte oder Diagonale!",
+        agreeButton: "Ich bin dabei – Frohes Fest und Spaß! 🎁",
+        descriptionTitle: "🧊 Erstes Spiel: Eisbrecher-Gaudi! ❄️",
+        descriptionText: "Pack ma’s, Kollegen! Dein Ziel ist es, das 3x3 Feld zu füllen, indem du mit den anderen ins Gespräch kommst und herausfindest, wer zu den Eigenschaften auf deinem Spielfeld passt. Unter jede Eigenschaft schreibst du den Namen der Person, die dazu passt. 🧊 **Tipp:** Jede Person darf nur einmal verwendet werden – also quatsch möglichst viele Leute an! Gib dein Bestes, das ganze Feld vollzukriegen – später am Abend kommt das noch zünftig zum Einsatz! Also schnapp dir einen Glühwein, quatsch drauflos, und mach aus dieser Eisbrecher-Gaudi einen echten Kracher. Prost und viel Spaß!",
         gameTitle: "Bingo-Spiel",
         startGameButton: "Spiel starten",
         usernamePlaceholder: "Geben Sie Ihren Spitznamen ein",
-        gotItButton: "Verstanden!"
+        gotItButton: "Auf geht’s zum Spiel! 🎁"
     }
 };
 
